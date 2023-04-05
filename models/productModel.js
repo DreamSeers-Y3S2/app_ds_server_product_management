@@ -7,59 +7,58 @@ const productSchema = mongoose.Schema({
 		required: true,
 	},
 	title: {
-        type: String,
+		type: String,
 		required: true,
-    },
-    category: {
-        type: String,
+	},
+	category: {
+		type: String,
 		required: true,
-    },
-    productBrand: {
-        type: String,
+	},
+	productBrand: {
+		type: String,
 		required: true,
-    },
+	},
 	productCode: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	description: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	picURL: {
-        type: String,
+		type: String,
 		required: true,
-        default: "https://res.cloudinary.com/dfmnpw0yp/image/upload/v1679235307/assets/tsuh9f6v1reihgqxwxrz.ico"
-    },
-    price: {
-        type: String,
+		default: "https://res.cloudinary.com/dfmnpw0yp/image/upload/v1679235307/assets/tsuh9f6v1reihgqxwxrz.ico",
+	},
+	price: {
+		type: String,
 		required: true,
-    },
-    ingredients: {
-        type: String,
+	},
+	ingredients: {
+		type: String,
 		required: true,
-    },
+	},
 	usage: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	warnings: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	discountNote: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	discountPrice: {
-        type: String,
+		type: String,
 		required: true,
-    },
+	},
 	quantity: {
-        type: String,
+		type: String,
 		required: true,
-    },
-	
+	},
 });
 
 const Product = mongoose.model("Product", productSchema);
