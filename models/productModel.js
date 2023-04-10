@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
 const productSchema = mongoose.Schema({
+	vendor: {
+		type: mongoose.Schema.Types.ObjectId,
+		required: true,
+		ref: "Vendor",
+	},
 	vendorEmail: {
 		type: String,
 		required: true,
