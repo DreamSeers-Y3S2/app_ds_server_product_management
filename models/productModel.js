@@ -37,7 +37,7 @@ const productSchema = mongoose.Schema({
 		default: "https://res.cloudinary.com/dfmnpw0yp/image/upload/v1679235307/assets/tsuh9f6v1reihgqxwxrz.ico",
 	},
 	price: {
-		type: String,
+		type: Number,
 		required: true,
 	},
 	ingredients: {
@@ -57,7 +57,7 @@ const productSchema = mongoose.Schema({
 		required: true,
 	},
 	discountPrice: {
-		type: String,
+		type: Number,
 		required: true,
 	},
 	quantity: {
