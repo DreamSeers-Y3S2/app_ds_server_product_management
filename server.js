@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 	res.send("Product API is Running");
 });
 
-app.use("/product", productRoutes);
+app.use("/products", productRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

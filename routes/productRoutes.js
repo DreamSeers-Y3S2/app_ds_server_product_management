@@ -15,7 +15,7 @@ router.route("/").get(getProducts);
 router.route("/:id").get(getProductById);
 
 router.route("/vendor/product/add").post(protectVendor, addProduct);
-router.route("/vendor/get/:id").get(protectVendor, getProductsForEachVendor);
+router.route("/vendor/product/get").get(protectVendor, getProductsForEachVendor);
 router
 	.route("/vendor/product/get/:id")
 	.get(protectVendor, getProductById)

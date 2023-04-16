@@ -14,6 +14,8 @@ const productSchema = mongoose.Schema({
 	title: {
 		type: String,
 		required: true,
+		unique:true,
+		
 	},
 	category: {
 		type: String,
@@ -26,6 +28,7 @@ const productSchema = mongoose.Schema({
 	productCode: {
 		type: String,
 		required: true,
+		unique:true,
 	},
 	description: {
 		type: String,
