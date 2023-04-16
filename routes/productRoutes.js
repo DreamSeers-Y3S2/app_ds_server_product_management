@@ -22,7 +22,7 @@ router
 	.put(protectVendor, updateProduct)
 	.delete(protectVendor, deleteProduct);
 
-router.route("/admin/product/get").post(protectAdmin, getProducts);
+router.route("/admin/product/get").get(protectAdmin, getProducts);
 router
 	.route("/admin/product/get/:id")
 	.get(protectAdmin, getProductById)
