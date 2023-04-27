@@ -1,3 +1,3 @@
-# app_ds_server_user_management
+# app_ds_server_product_management
 
-backend for the microservice user management of the Hela Ayu App
+backend for the microservice product management of the Hela Ayu App
