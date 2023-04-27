@@ -1,6 +1,7 @@
 const Product = require("../models/productModel");
 const asyncHandler = require("express-async-handler");
 
+//add a product according to vendor's email
 const addProduct = asyncHandler(async (req, res) => {
 	const {
 		vendorEmail,
@@ -62,16 +63,19 @@ const addProduct = asyncHandler(async (req, res) => {
 	}
 });
 
+//get all of products
 const getProducts = asyncHandler(async (req, res) => {
 	const products = await Product.find();
 	res.json(products);
 });
 
+//get products for each of vendors
 const getProductsForEachVendor = asyncHandler(async (req, res) => {
 	const products = await Product.find({ vendor: req.vendor._id });
 	res.json(products);
 });
 
+//get product according to their id
 const getProductById = asyncHandler(async (req, res) => {
 	const product = await Product.findById(req.params.id);
 
@@ -82,6 +86,7 @@ const getProductById = asyncHandler(async (req, res) => {
 	}
 });
 
+//update product details
 const updateProduct = asyncHandler(async (req, res) => {
 	const {
 		title,
@@ -124,6 +129,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 	}
 });
 
+// delete a single product
 const deleteProduct = asyncHandler(async (req, res) => {
 	const product = await Product.findById(req.params.id);
 

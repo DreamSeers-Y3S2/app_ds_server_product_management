@@ -1,3 +1,7 @@
+/**
+ * This model is implemented for
+ * the Vendor management
+ */
 const mongoose = require("mongoose");
 
 const vendorSchema = mongoose.Schema(

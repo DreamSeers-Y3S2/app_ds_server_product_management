@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 	res.send("Product API is Running");
 });
 
+//product start server route
 app.use("/products", productRoutes);
 
 app.use(notFound);
